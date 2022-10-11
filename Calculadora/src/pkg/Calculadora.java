@@ -1,37 +1,26 @@
 package pkg;
 
 public class Calculadora {
-
-	private int a, b;
 	
-	public Calculadora() {
-		
-	}
-	
-	public Calculadora(int a, int b) {
-		this.a = a;
-		this.b = b;
-	}
-	
-	public int suma() {
-		int suma = this.a + this.b;
+	public static int suma(int a, int b) {
+		int suma = a + b;
 		return suma;
 	}
 	
-	public int resta() {
-		int resta = this.a - this.b;
+	public static int resta(int a, int b) {
+		int resta = a - b;
 		return resta;
 	}
 	
-	public int multiplica() {
-		int multiplica = this.a * this.b;
+	public static int multiplica(int a, int b) {
+		int multiplica = a * b;
 		return multiplica;
 	}
 	
-	public int divide() {
+	public static int divide(int a, int b) {
 		int divide = 0;
-		if(this.b != 0) {
-			divide = this.a % this.b;
+		if(b != 0) {
+			divide = a / b;
 		}
 		else {
 			divide = -1;
