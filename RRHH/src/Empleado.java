@@ -1,12 +1,12 @@
 public class Empleado {
-	enum TipoEmpleado{vendedor, encargado};
+	enum TipoEmpleado{Vendedor, Encargado};
 	
 	float nominaBruta = 0, salariobase = 0;
 	
 	float calculoNominaBruta(TipoEmpleado tipo, float ventasMes, float horasExtra) {
-		if(tipo==TipoEmpleado.vendedor)
+		if(tipo==TipoEmpleado.Vendedor)
 			salariobase=2000;
-		else if(tipo==TipoEmpleado.encargado)
+		else if(tipo==TipoEmpleado.Encargado)
 			salariobase=2500;
 		
 		if(ventasMes>=1000) {
